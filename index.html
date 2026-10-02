@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d0912">
+  <title>Иный взгляд — longread</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader" id="loader">
+    <div class="loader__orb"></div>
+    <p>погружаемся в сон…</p>
+  </div>
+
+  <header class="topbar">
+    <span class="topbar__brand">ИНОЙ СОН</span>
+    <div class="topbar__progress"><span id="progress"></span></div>
+    <span class="topbar__count" id="count">00%</span>
+  </header>
+
+  <main>
+    <section class="hero scene" data-section="0">
+      <img class="design" src="assets/design.svg" alt="Дизайн лонгрида «Иной сон»">
+      <div class="hero__fx fx fx--one"></div>
+      <div class="hero__fx fx fx--two"></div>
+      <div class="grain"></div>
+      <div class="hero__hint">листай вниз <span>↓</span></div>
+    </section>
+
+    <section class="interactive scene scene--dark" data-section="1">
+      <div class="scene__content reveal">
+        <span class="eyebrow">01 / ПЕРВЫЙ ПОВОРОТ</span>
+        <h2>Ты спишь, но<br><em>не знаешь об этом.</em></h2>
+        <p>Представь: ты идёшь по знакомой улице, но дома стоят не на своих местах, часы показывают бессмысленные цифры, а за дверью квартиры внезапно оказывается море.</p>
+        <span class="whisper">И тут появляется мысль:</span>
+      </div>
+      <div class="float-shape shape shape--lollipop"></div>
+      <div class="float-shape shape shape--orb"></div>
+      <div class="sparkle sparkle--a">✦</div>
+      <div class="sparkle sparkle--b">✧</div>
+    </section>
+
+    <section class="lucid scene" data-section="2">
+      <div class="cloud cloud--a"></div>
+      <div class="cloud cloud--b"></div>
+      <div class="rings"></div>
+      <div class="lucid__title reveal">
+        <span>И вот</span>
+        <strong>осознание.</strong>
+      </div>
+      <div class="lucid__copy reveal">
+        <p>Осознанный сон — это состояние, в котором человек понимает, что находится во сне.</p>
+        <p>Иногда после этого он может влиять на происходящее: летать, менять пространство, создавать предметы или встречаться с людьми.</p>
+        <p>При этом осознанность не означает полный контроль. Иногда ты понимаешь, что спишь, но сон всё равно продолжает жить по собственным правилам.</p>
+      </div>
+      <div class="moon"></div>
+    </section>
+
+    <section class="final scene scene--dark" data-section="3">
+      <div class="final__stars"></div>
+      <div class="final__inner reveal">
+        <span class="eyebrow">02 / МЕЖДУ СОЗНАНИЕМ И РЕАЛЬНОСТЬЮ</span>
+        <h2>Где заканчивается<br><em>сон?</em></h2>
+        <p>Граница между реальным и придуманным оказывается гораздо тоньше, чем кажется.</p>
+        <button class="replay" id="replay">↻ начать путешествие заново</button>
+      </div>
+    </section>
+  </main>
+
+  <nav class="dots" aria-label="Навигация">
+    <button class="dot is-active" data-to="0" aria-label="Начало"></button>
+    <button class="dot" data-to="1" aria-label="Первый поворот"></button>
+    <button class="dot" data-to="2" aria-label="Осознание"></button>
+    <button class="dot" data-to="3" aria-label="Финал"></button>
+  </nav>
+
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <script src="script.js"></script>
+</body>
+</html>
